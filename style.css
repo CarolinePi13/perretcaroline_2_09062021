@@ -1,0 +1,40 @@
+/* List of fonts used*/
+/* Body Properties*/
+a{
+    text-decoration: none;
+}
+/* Block Header and navigation*/
+
+/* Block Main*/
+.dispositionSections{
+    display: flex;
+
+}
+    /* sous block hebergement*/
+article img{
+    width: 120px;
+
+}
+.hebergement{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.lesPlusPopulaires{
+    width: 30%;
+}
+article{
+    display: flex;
+    flex-direction: column;
+}
+
+    /* sous block Les plus poplaires*/
+/* Block Section Activites*/
+/* Block Section Footer*/
+footer{
+    display: flex;
+}
+ul{
+    list-style: none;
+}
+/* media queries*/
