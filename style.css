@@ -2,9 +2,10 @@
 
 
 /* Body Properties*/
+
 .bloc-page{
-    margin: 0 auto;
-    width: 1440px;
+    margin:0 40px;
+    
 }
 
 body{
@@ -12,15 +13,34 @@ body{
 }
 
 h1{
-    font-size: 1.7em;
+    font-size: 1.6em;
     font-weight: bold;
 }
+h2{
+    margin-top: 0;
+    font-size: 1.2em;
+}
 h3{ 
-    font-size: 1,2em;}
+    font-size: 1em;
+    margin:2px;
+}
+p{
+    margin: 2px;
+}
 a{
     text-decoration: none;
     color: black;
 }
+.bold{
+    font-weight: bold;
+}
+.grey{
+   color: #7e7979;
+}
+.blue{
+    color: #0065FC;
+}
+
 /* Block Header and navigation*/
 .entete{
     display: flex;
@@ -32,63 +52,110 @@ nav ul{
     margin-right: 10px;
 }
 nav ul li{
-    padding-left:10px;
-    
+    padding-left:70px;
+    font-size: 0.9em; 
 }
+
+.send{
+    background-color: #0065FC;
+}
+
 button{
-    border: 2px solid #F2F2F2;
-    border-radius: 25px;
+    height: 50px;
     background-color: white;
-    padding: 15px;
-    font-size: 1.5em;
+    padding:10px 20px 10px 50px;
+    font-size: 17px;
+    font-weight: bold;
+    border: 3px solid #F2F2F2;
+    border-radius:20px ;
+    white-space: nowrap;
+}
+.single_filter{
+    margin-left: 15px;
+    display: flex;
+    flex-wrap: nowrap;
 }
 .filtres {
     display: flex;
+    align-items: center;
+
 }
 .filtres_liste{
     display: flex;
+    padding-left: 10px;
+    flex-wrap: wrap;
+}
+.single_filter:{
+    border: 3px solid #F2F2F2;
+    border-radius: 25px;
+    
 }
 .filtres i{
-    padding:10px;
+    padding:17px;
     background-color: #DEEBFF;
-    border-radius:20px;
+    border-radius:25px;
     color: #0065FC;
 }
-/* Block Main*/
-.dispositionSections{
-    display: flex;
-    
+.infologo{
+    height: 15px;
+    background-color:#0065FC ;
+    font-size: 15px;
+    color: white;
+   margin:3px;
+   border: 1px solid  #F2F2F2;
+   border-radius: 15px;
+   align-self: center;
 }
+.infoLine{
+    display: flex;
+}
+/* Block Main*/
+.around_hebergement_plusPop{
+    display: flex;
+}
+
     /* sous block hebergement*/
-.Conteneur_ListeHebergement{
+
+.Parent_sectionHebergement{
     background-color:  #F2F2F2;
     border-radius: 15px;
-    padding: 30px;
-    width: 55%;
+    padding: 40px;
+    width: 65%;  
 }
-.ListeHebergement{
-    
+.ListeHebergement_Marseille{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-   
-}
-.hebergement__destination{
-    border: solid 3px white;
-    margin:10px;
-    background-color: white;
-    border-radius: 15px;
-    padding-bottom: 4px;
-    padding-left: 4px;
 }
 
-article img{
-    width:  200px;
-    height: 165px;
+.hebergement__card{
+    width:245px;
+    height: 200px;
+    margin-bottom: 25px;
+    background-color: white;
     border-radius: 15px;
+    padding: 5px;
+    
+}
+.image_hebergement{
+    height: 165px;
+    width: 100%;
+    border-radius: 15px;
+    
+}
+.hebergement__description{
+    background-color: white;
+    margin-top: -35px;
+    position: relative;
 }
 
     /* sous block Les plus poplaires*/
+
+.pop_titre{
+    display: inline-block;
+    
+}
+
 .lesPlusPopulaires{
   padding: 30px;
   margin-left: 40px;
@@ -97,18 +164,34 @@ article img{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 31%;
 
 }
 .hebergement__Populaire{
     display: flex;
+    border: solid 3px white;
+    margin:10px;
+    background-color: white;
+    border-radius: 15px;
     
+    padding-left: 4px;
+    width: 345px;
+    height: 145px;
+}
+.image_plus_populaire{
+    border-radius: 15px;
+    height: 135px ;
+    width: 60%;
 }
 .description_hebergementPopulaire{
+ 
  background-color: white;
- border-radius: 15px;
- padding-bottom: 4px;
+ border-radius: 0 15px 15px 0;
  padding-left: 4px;
  padding-right: 4px;
+ width: 210px;
+ margin-left:-20%;
+ position: relative;
 }
 /* Block Section Activites*/
 /* Block Section Footer*/
