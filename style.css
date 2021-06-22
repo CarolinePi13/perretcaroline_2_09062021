@@ -1,16 +1,14 @@
-/* List of fonts used*/
-
-
 /* Body Properties*/
 
 .bloc-page{
-    margin: 0 2%;
+    margin: 0 2% 2% 2%;
     
 }
 
 body{
     font-family: "Raleway", Arial, Helvetica, sans-serif;
-    
+    width: 100%;
+    margin:0;
 }
 ul{
     list-style: none;
@@ -48,33 +46,54 @@ a{
 /* Block Header and navigation*/
 .logo-reservia{
     height: 40px;
-    justify-self: left;
-    padding-right: 450px;
+    justify-self: flex-start;
+    
 }
 
 .entete{
     display: flex;
-    
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
+
 .signup{
+    width: 100px;
+    text-align: center;
+}
+nav{ 
+    display: flex;
     
 }
 nav ul{
     display: flex;
-     
-    width: 330px;
-    
+    margin-top: 0;
+    width: 100%;
+    justify-content: flex-end;
 }
 nav ul li{
     text-align: center;
     font-size: 0.9em;
-    width:50%
+    width:165px;
 }
+
 .nav_hebergement{
     border-top: 2px solid #0065FC;
     box-shadow: inset 0px 3px 7px -6px #0065FC;
-    padding-top:20px;
+    padding:20px 0 0 0;
+}
+.logo-reservia:nth-child(1){
+    flex:0;
+}
+.navigation:nth-child(2){
+    flex:1;
+}
+.signup:nth-child(3){
+    flex:0;
+}
+.nav_activites{
+    border-top: 2px transparent;
+    padding:20px 0 0 0;
 }
 
 .PageTitle{
@@ -97,7 +116,6 @@ nav ul li{
     background-color:#F2F2F2 ;
     border-radius: 15px 0 0 15px;
     padding-top: 15px;
-    border-right: solid 1px #F2F2F2;
 }
 .search{
 
@@ -165,20 +183,29 @@ nav ul li{
     border-radius:25px;
     color: #0065FC;
 }
-.infologo{
-    height: 15px;
-    background-color:#0065FC ;
-    font-size: 15px;
-    color: white;
-   margin:3px;
-   border: 1px solid  #F2F2F2;
-   border-radius: 15px;
-   align-self: center;
-   margin-top: 8px;
-}
+
 .infoLine{
     display: flex;
+    align-items: baseline;
 }
+.fa-info-circle::before{
+
+   
+    height: 25px;
+    width: 25px;
+    background-color:#0065FC ;
+    color: white;
+    border: 1px solid #F2F2F2;
+    border-radius: 30px ;
+    font-size: 1em;
+    margin: 1%;
+    display: inline;
+}
+.infoLine p{
+    padding-left: 5px;
+}
+
+
 /* Block Main*/
 .around_hebergement_plusPop{
     display: flex;
@@ -195,7 +222,7 @@ nav ul li{
 .Parent_sectionHebergement{
     background-color:  #F2F2F2;
     border-radius: 15px;
-    padding: 40px 37px 40px 37px;
+    padding: 2.5%;
     width: 65%;  
 }
 
@@ -212,7 +239,7 @@ nav ul li{
     margin-bottom: 25px;
     background-color: white;
     border-radius: 15px;
-    padding: 5px;
+    padding: 3px;
     box-shadow: 2px 2px 20px #818181af ;
 }
 .image_hebergement{
@@ -227,9 +254,9 @@ nav ul li{
     background-color: white;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 95%;
     border-radius: 0 0 15px 15px;
-    margin: 5px;
+   padding-left: 5px;
 }
 
 
@@ -238,8 +265,9 @@ nav ul li{
 
 
 .lesPlusPopulaires{
-    padding: 40px 37px 0 37px;
-  margin-left: 40px;
+    padding: 2.5%;
+  margin-left: 2%;
+  width: 28%;
   border-radius: 15px;
   background-color:#F2F2F2;
   display: flex;
@@ -251,16 +279,21 @@ nav ul li{
     justify-content: space-between; 
     width: 100%;   
 }
+.contenu_lesPlusPopulaire{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
 .hebergement__Populaire{
     display: flex;
     align-items: center;
-    border: 5px solid white;
+    border: 3px solid white;
     margin-bottom:30px;
-    background-color: white;
     border-radius: 15px;
     width: 345px;
     height: 135px;
     box-shadow: 2px 2px 20px #818181af ;
+    background-color: white;
 }
 .image_plus_populaire{
     border-radius: 15px 0 0 15px;
@@ -332,8 +365,9 @@ nav ul li{
     box-shadow: 3px 3px 3px #F2F2F2 ;
     background-color: white;
 }
-.caption p{
-    padding: 10px;
+.caption h4{
+    padding-left: 15px;
+    
 }
 
 
@@ -343,7 +377,7 @@ footer{
    display: flex;
    padding-top: 50px;
    padding-bottom: 50px;
-   width: 100%;
+   width: 100vw;
    background-color: #F2F2F2 ;  
 }
 .footer_child{
@@ -353,7 +387,7 @@ footer{
 
 /* media queries*/
 
-@media all and (min-width: 1024px) and (max-width: 1280px)
+@media all and (max-width: 1280px)
 {
     .around_hebergement_plusPop{
         flex-direction: column-reverse;
@@ -380,6 +414,7 @@ footer{
     }
     .description_hebergementPopulaire{
         margin: 10px 10px 10px 15px;
+
     }
     .conteneur_activites article{
         height: 210px;
@@ -393,13 +428,19 @@ footer{
     
 }
 /* règles CSS pour les tablettes ici */
-@media all and (min-width: 760px) and (max-device-width: 1024px)
+@media screen and (max-width: 880px) 
 {
     body{
         padding:0;
     }
     .bloc-page{
         margin:0;  
+    } 
+    h2{
+        margin:20px;
+    }
+    header{
+        padding: 0 20px 0 20px; 
     }
     .filtres_liste
     {
@@ -413,13 +454,14 @@ footer{
    
     .around_hebergement_plusPop{
         flex-direction: column-reverse;
+        align-items: center;
     }
    
     .lesPlusPopulaires{
       margin-left: 0;
-      padding: 30px 10px 0 0px;
+      padding: 30px 30px 0 30px;
       justify-content: center;
-      width: 99%;
+      width: fit-content;
       margin-bottom: 40px;
     }
     
@@ -433,8 +475,13 @@ footer{
         height: 135px;  
     } 
     .pop_titre{
-        padding: 10px;
+        padding: 20px 0px 20px 0px;
         width: 90%;
+    }
+    .Parent_sectionHebergement{
+        margin-top: 0;
+        
+        width: 100vw;
     }
     .ListeHebergement_Marseille{
         justify-content: space-around;
@@ -442,6 +489,9 @@ footer{
     }
     .description_hebergementPopulaire{
         margin: 10px 10px 10px 15px;
+    }
+    .afficher_plus{
+        padding-left: 20px;
     }
     .conteneur_activites article{
         height: 210px;
@@ -461,14 +511,13 @@ footer{
 
 }
 /* règles CSS pour les mobiles ici */
-@media all and (min-width: 375px) and (max-device-width: 760px){
+@media screen and (max-width: 380px) {
     body, .bloc-page{
         margin:0; 
         padding: 0; 
     }
-    header{
-        margin: 20px;
-        
+    .PageTitle, .searchBar, .filtres, .infoLine{
+        padding: 0 20px 0 20px; 
     }
     h1{
         font-size:1.4em
@@ -476,14 +525,43 @@ footer{
     h2{
         margin:20px;
     }
-    nav ul{
-        flex-direction: column-reverse;
-        align-items: flex-end;
-        flex-wrap: wrap;
-        width: fit-content;
+
+    .entete{
+        flex-wrap: wrap; 
+        row-gap: 10px;
     }
-    .nav_hebergement, .nav-activites{
+   .logo-reservia:nth-child(1){
+    order: 1;
+   }
+   .navigation:nth-child(2){
+        order: 3;
+   }
+   .signup:nth-child(3){
+        order: 2;
+   }
+   .logo-reservia{
+    padding:15px;
+   }
+    .nav_hebergement, .nav_activites{
+        border-top: 0;
+        box-shadow: none;
+        padding: 0 0 20px 0;
+        font-size: 1em;
         width: 50%;
+    }
+    .nav_hebergement{
+        border-bottom: 2px solid #0065FC;
+    }
+    .nav_activites{
+        border-bottom: 2px solid #F2F2F2;
+    }
+    nav ul{
+        padding: 0; 
+        width: 100%;
+        
+    }
+    .signup{
+        padding:15px;
     }
     
     .searchBar p{
@@ -521,18 +599,26 @@ footer{
         margin:0 10px 0 0;
         
     }
+    .infologo{
+        font-size: 20px;
+    }
     .around_hebergement_plusPop{
         flex-direction: column-reverse;
     }
     .pop_titre{
-        padding: 10px;
-        width: 100%;
+        padding: 0px; 
+        width: 90%;
+        align-items: center;
+    }
+    .pop_titre h2{
+        margin: 20px 0 20px 0;
     }
     .lesPlusPopulaires{
         margin: 0;
-        padding: 8px;
+        padding: 0;
         align-items:center;
         border-radius:0;
+        width: 100%;
     }
    
     .hebergement__Populaire{
@@ -548,7 +634,7 @@ footer{
         width: 100%;
         background-color: white;
         padding: 0;
-        margin-top: 40px;
+        margin-top: 20px;
     }
     .afficher_plus{
         padding-left: 20px;
@@ -569,6 +655,10 @@ footer{
     } 
     footer{
         flex-direction: column;
+        padding-top:20px ;
+    }
+    footer ul{
+        width: 80vw;
     }
 
 }
