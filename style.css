@@ -1,10 +1,8 @@
 /* Body Properties*/
 
 .bloc-page{
-    margin: 0 2% 2% 2%;
-    
+    margin: 0 2% 2% 2%; 
 }
-
 body{
     font-family: "Raleway", Arial, Helvetica, sans-serif;
     width: 100%;
@@ -44,26 +42,24 @@ a{
 }
 
 /* Block Header and navigation*/
+
+/* logo and nav bar*/
 .logo-reservia{
     height: 40px;
-    justify-self: flex-start;
-    
+    justify-self: flex-start;    
 }
-
 .entete{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
 }
-
 .signup{
     width: 100px;
     text-align: center;
 }
 nav{ 
-    display: flex;
-    
+    display: flex;   
 }
 nav ul{
     display: flex;
@@ -71,12 +67,12 @@ nav ul{
     width: 100%;
     justify-content: flex-end;
 }
+
 nav ul li{
     text-align: center;
     font-size: 0.9em;
     width:165px;
 }
-
 .nav_hebergement{
     border-top: 2px solid #0065FC;
     box-shadow: inset 0px 3px 7px -6px #0065FC;
@@ -95,11 +91,12 @@ nav ul li{
     border-top: 2px transparent;
     padding:20px 0 0 0;
 }
-
+/* "Trouver votre hebergement" Titre h1 */
 .PageTitle{
     margin-top: 10px;
     margin-bottom: 20px;
 }
+/* icone, search bar, send button */
 .searchBar p{
     display: flex;
     width: 420px;
@@ -107,7 +104,7 @@ nav ul li{
     border : solid 1px #F2F2F2;
     border-radius: 15px;
     margin-bottom: 10px;
-    }
+}
 
 .fa-map-marker-alt{
     height: 35px;
@@ -136,11 +133,11 @@ nav ul li{
     color: white;
     
 }
-.loupe{
-    display:none;
-}
-
-
+/* alternative button for mobile */
+    .loupe{
+        display:none;
+    }
+/* filtres */
 .filtres button{
     
     height: 50px;
@@ -152,15 +149,18 @@ nav ul li{
     border-radius:20px;
     white-space: nowrap;
 }
+
 .single_filter{
     margin-left: 15px;
     display: flex;
     flex-wrap: nowrap;  
 }
+
 .single_filter:hover{
     box-shadow: 2px 2px 2px gray;
     border-radius:20px;
 }
+
 .single_filter i{
     position: relative;
     margin-right:-40px;
@@ -171,6 +171,7 @@ nav ul li{
     align-items: center;
 
 }
+
 .filtres_liste{
     display: flex;
     padding-left: 10px;
@@ -183,14 +184,13 @@ nav ul li{
     border-radius:25px;
     color: #0065FC;
 }
-
+/* ligne d'info */
 .infoLine{
     display: flex;
     align-items: baseline;
 }
-.fa-info-circle::before{
 
-   
+.fa-info-circle::before{
     height: 25px;
     width: 25px;
     background-color:#0065FC ;
@@ -201,23 +201,26 @@ nav ul li{
     margin: 1%;
     display: inline;
 }
+
 .infoLine p{
     padding-left: 5px;
 }
 
-
-/* Block Main*/
+/* properties page content */
 .around_hebergement_plusPop{
     display: flex;
     margin-top: 30px;
 }
+
 .around_hebergement_plusPop p{
     font-size: 0.8em;
 }
+
 .fa-star{
     font-size: 10px;
 }
-    /* sous block hebergement*/
+
+    /* sub block hebergement*/
 
 .Parent_sectionHebergement{
     background-color:  #F2F2F2;
@@ -242,12 +245,12 @@ nav ul li{
     padding: 3px;
     box-shadow: 2px 2px 20px #818181af ;
 }
+
 .image_hebergement{
     height: 115px;
     width: 235px;
     border-radius: 15px 15px 0 0;
-    object-fit: cover;
-    
+    object-fit: cover;  
 }
 
 .hebergement__description{
@@ -259,13 +262,10 @@ nav ul li{
    padding-left: 5px;
 }
 
-
-    /* sous block Les plus poplaires*/
-
-
+    /* sub block Les plus poplaires*/
 
 .lesPlusPopulaires{
-    padding: 2.5%;
+  padding: 2.5%;
   margin-left: 2%;
   width: 28%;
   border-radius: 15px;
@@ -274,17 +274,20 @@ nav ul li{
   flex-direction: column;
   justify-content: space-between;
 }
+
 .pop_titre{
     display: flex;
     justify-content: space-between; 
     width: 100%;   
 }
+
 .contenu_lesPlusPopulaire{
     display: flex;
     flex-direction: column;
     align-items:center;
 }
-.hebergement__Populaire{
+
+.hebergement-populaire_card{
     display: flex;
     align-items: center;
     border: 3px solid white;
@@ -295,11 +298,13 @@ nav ul li{
     box-shadow: 2px 2px 20px #818181af ;
     background-color: white;
 }
+
 .image_plus_populaire{
     border-radius: 15px 0 0 15px;
     height: 135px ;
     object-fit: cover;
 }
+
 .description_hebergementPopulaire{
  display: flex;
  flex-direction: column;
@@ -309,24 +314,27 @@ nav ul li{
  height: 90%;
  flex: 60%;
  margin: 10px 40px 10px 15px;
- 
 }
+
 .description_hebergementPopulaire p{
    flex:50%
 }
+
 /* Block Section Activites*/
+
 .activites{
     margin-top: 65px;
     margin-bottom: 60px;
 }
+
 .conteneur_activites{
     display: flex;
     flex-direction: column;
     column-gap: 1%;
     flex-wrap: wrap;
     height: 445px;
-
 }
+
 .vieux-port, .parc{
     height: 445px; 
 }
@@ -335,27 +343,33 @@ nav ul li{
     height: 235px;  
     margin-bottom: 45px; 
 }
+
 .iles {
     height: 165px;    
 }
+
 .notre-dame {
     height: 195px; 
     margin-bottom: 40px;   
 }
+
 .longchamp {
     height: 210px;   
 }
+
 .conteneur_activites img{
     flex: 1;
     object-fit: cover;
     overflow: auto;
     border-radius: 15px 15px 0 0;
 }
+
 .caption {
     flex:none;
     font-size: 1em;
     height: 55px; 
 }
+
 .conteneur_activites article{
     object-fit: cover;
     width: 300px;
@@ -365,14 +379,14 @@ nav ul li{
     box-shadow: 3px 3px 3px #F2F2F2 ;
     background-color: white;
 }
+
 .caption h4{
     padding-left: 15px;
     
 }
 
-
-
 /* Block Section Footer*/
+
 footer{
    display: flex;
    padding-top: 50px;
@@ -380,42 +394,43 @@ footer{
    width: 100vw;
    background-color: #F2F2F2 ;  
 }
+
 .footer_child{
     width: 35%;
 }
-
 
 /* media queries*/
 
 @media all and (max-width: 1280px)
 {
+    /* properties page content for smaller screens */
     .around_hebergement_plusPop{
         flex-direction: column-reverse;
     }
+    /* sub block hebergement for smaller screens */
     .Parent_sectionHebergement{
         width: 95%;
     }
+    /* sub block Les plus poplaires for smaller screens*/
     .lesPlusPopulaires{
       margin: 0;
       flex-direction: column;
       width:95%;
-      margin-bottom: 40px;
-      
+      margin-bottom: 40px;  
     }
     .contenu_lesPlusPopulaire{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
-    .hebergement__Populaire{
-        
+    .hebergement-populaire_card{  
         width: 290px;
         height: 135px;   
     }
     .description_hebergementPopulaire{
         margin: 10px 10px 10px 15px;
-
     }
+    /* Block Section Activites for smaller screeens*/
     .conteneur_activites article{
         height: 210px;
     }
@@ -430,33 +445,32 @@ footer{
 /* règles CSS pour les tablettes ici */
 @media screen and (max-width: 880px) 
 {
+    /* Body Properties for tablets*/
     body{
         padding:0;
-    }
+    } 
     .bloc-page{
         margin:0;  
     } 
     h2{
         margin:20px;
     }
+    /* Block Header and navigation for tablets*/
     header{
         padding: 0 20px 0 20px; 
     }
     .filtres_liste
     {
         row-gap: 10px;
-    }
-    .Parent_sectionHebergement{ 
-        width: 100%;
-        padding:5px 0 30px 0;
-        margin-top: 30px;
-    }
-   
+    } 
+    /* properties page content for tablets*/
     .around_hebergement_plusPop{
         flex-direction: column-reverse;
         align-items: center;
     }
+    
    
+   /* sub block Les plus poplaires for tablets*/
     .lesPlusPopulaires{
       margin-left: 0;
       padding: 30px 30px 0 30px;
@@ -470,17 +484,19 @@ footer{
         flex-direction: column;
         align-items:center
     }
-    .hebergement__Populaire{
+    .hebergement-populaire_card{
         width: 330px;
         height: 135px;  
     } 
     .pop_titre{
-        padding: 20px 0px 20px 0px;
+        padding: 0px 0px 20px 0px;
         width: 90%;
+        align-items: center ;
     }
-    .Parent_sectionHebergement{
+    /* sub block hebergement for tablets*/
+    .Parent_sectionHebergement{  
+        padding:5px 0 30px 0;
         margin-top: 0;
-        
         width: 100vw;
     }
     .ListeHebergement_Marseille{
@@ -493,6 +509,7 @@ footer{
     .afficher_plus{
         padding-left: 20px;
     }
+    /* Block Section Activites for tablets*/
     .conteneur_activites article{
         height: 210px;
     }
@@ -512,20 +529,25 @@ footer{
 }
 /* règles CSS pour les mobiles ici */
 @media screen and (max-width: 380px) {
+   
+    /* Body Properties for mobile*/
     body, .bloc-page{
         margin:0; 
         padding: 0; 
     }
-    .PageTitle, .searchBar, .filtres, .infoLine{
-        padding: 0 20px 0 20px; 
-    }
+  
     h1{
         font-size:1.4em
     }
     h2{
         margin:20px;
-    }
+        }
+    /* Block Header and navigation for mobile*/
 
+     .PageTitle, .searchBar, .filtres, .infoLine{
+        padding: 0 20px 0 20px; 
+    }
+    /* logo and nav bar for mobile*/
     .entete{
         flex-wrap: wrap; 
         row-gap: 10px;
@@ -557,13 +579,12 @@ footer{
     }
     nav ul{
         padding: 0; 
-        width: 100%;
-        
+        width: 100%;   
     }
     .signup{
         padding:15px;
     }
-    
+    /* icone, search bar, send button for mobile*/
     .searchBar p{
         width: 330px;
         height: 50px;
@@ -583,7 +604,7 @@ footer{
     .rechercher {
           display: none;
         }
-
+    /* filtres for mobiles*/
 
     .filtres{
         flex-direction: column;
@@ -599,12 +620,15 @@ footer{
         margin:0 10px 0 0;
         
     }
+    /* barre info for mobile*/
     .infologo{
         font-size: 20px;
     }
+    /* properties page content for mobile*/
     .around_hebergement_plusPop{
         flex-direction: column-reverse;
     }
+    /* sub block Les plus poplaires for mobile*/
     .pop_titre{
         padding: 0px; 
         width: 90%;
@@ -621,11 +645,12 @@ footer{
         width: 100%;
     }
    
-    .hebergement__Populaire{
+    .hebergement-populaire_card{
         width: 330px;
         height: 135px;  
         
     }
+    /* sub block hebergement for mobile */
     .ListeHebergement_Marseille{
         justify-content: space-around;
         flex-wrap: wrap;
@@ -639,6 +664,7 @@ footer{
     .afficher_plus{
         padding-left: 20px;
     }
+    /* Block Section Activites for mobile*/
     .conteneur_activites article{
         height: 210px;
     }
@@ -653,6 +679,7 @@ footer{
     .port, .notre-dame{ 
         margin-bottom:0;
     } 
+    /* Block Section Footer for mobile*/
     footer{
         flex-direction: column;
         padding-top:20px ;
