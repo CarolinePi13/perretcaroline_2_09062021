@@ -190,21 +190,22 @@ nav ul li{
     align-items: baseline;
 }
 
-.fa-info-circle::before{
-    height: 25px;
-    width: 25px;
-    background-color:#0065FC ;
-    color: white;
+.fas.fa-info.blue{
+    height: 20px;
+    width: 20px;
     border: 1px solid #F2F2F2;
-    border-radius: 30px ;
-    font-size: 1em;
-    margin: 1%;
-    display: inline;
+    border-radius: 30px;
+    font-size: 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+
 .infoLine p{
-    padding-left: 5px;
+    margin-left: 5px;
 }
+
 
 /* properties page content */
 .around_hebergement_plusPop{
@@ -411,17 +412,28 @@ footer{
     .Parent_sectionHebergement{
         width: 95%;
     }
+    .ListeHebergement_Marseille{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 4%;
+        column-gap: 4%;
+    }
     /* sub block Les plus poplaires for smaller screens*/
     .lesPlusPopulaires{
       margin: 0;
       flex-direction: column;
       width:95%;
       margin-bottom: 40px;  
+      padding: 3%;
     }
     .contenu_lesPlusPopulaire{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 20px;
+        column-gap: 1%;
+        justify-content: space-around;
     }
     .hebergement-populaire_card{  
         width: 290px;
@@ -624,8 +636,8 @@ footer{
         
     }
     /* barre info for mobile*/
-    .infologo{
-        font-size: 20px;
+    .fas.fa-info.blue{
+        flex-basis: 25px;
     }
     /* properties page content for mobile*/
     .around_hebergement_plusPop{
