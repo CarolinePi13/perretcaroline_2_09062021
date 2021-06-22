@@ -543,7 +543,10 @@ footer{
         margin:20px;
         }
     /* Block Header and navigation for mobile*/
-
+    
+    header{
+        padding: 0;
+    }
      .PageTitle, .searchBar, .filtres, .infoLine{
         padding: 0 20px 0 20px; 
     }
