@@ -21,8 +21,8 @@ h2{
     font-size: 1.2em;
 }
 h3{ 
-    font-size: 0.9em;
-    margin:2px;
+    font-size: 1em;
+    margin: 3px 0 0 0;
 }
 p{
     margin: 8px 0 0 0;
@@ -213,8 +213,8 @@ nav ul li{
     font-size: 0.8em;
 }
 
-.fa-star{
-    font-size: 10px;
+.stars_pop, .heber_star{
+    font-size: 12px;
 }
 
     /* sub block hebergement*/
@@ -234,8 +234,9 @@ nav ul li{
 
 .hebergement__card{
     display: flex;
+    text-align: left;
     width:235px;
-    height: 190px;
+    height: 200px;
     margin-bottom: 25px;
     background-color: white;
     border-radius: 15px;
@@ -255,8 +256,13 @@ nav ul li{
     display: flex;
     flex-direction: column;
     width: 95%;
+    height: 55px;
     border-radius: 0 0 15px 15px;
    padding-left: 5px;
+   
+}
+.hebergement__description p{
+    padding-bottom: 10px;
 }
 
     /* sub block Les plus poplaires*/
@@ -309,12 +315,12 @@ nav ul li{
  border-radius: 0 15px 15px 0;
  width: 100%;
  height: 90%;
- flex: 60%;
  margin: 10px 40px 10px 15px;
 }
 
 .description_hebergementPopulaire p{
-   flex:50%
+   font-size: 0.8em;
+   flex: 90%;
 }
 
 /* Block Section Activites*/
@@ -450,7 +456,7 @@ footer{
     
 }
 /* règles CSS pour les tablettes ici */
-@media screen and (max-width: 880px) 
+@media screen and (max-width: 1000px) 
 {
     /* Body Properties for tablets*/
     body{
@@ -466,6 +472,7 @@ footer{
     header{
         padding: 0 20px 0 20px; 
     }
+  
     .filtres_liste
     {
         row-gap: 10px;
@@ -480,20 +487,36 @@ footer{
    /* sub block Les plus poplaires for tablets*/
     .lesPlusPopulaires{
       margin-left: 0;
-      padding: 30px 30px 0 30px;
+      padding: 0 5% 5% 5%;
       justify-content: center;
       width: fit-content;
       margin-bottom: 40px;
     }
-    
-    .contenu_lesPlusPopulaire{
-        display: flex;
-        flex-direction: column;
-        align-items:center
+    .image_plus_populaire{
+        border-radius: 15px 0 0 15px;
+        height: 100% ;
+        width:40%;
+        object-fit: cover;
     }
+    
+    .description_hebergementPopulaire{
+     display: flex;
+     flex-direction: column;
+     background-color: white;
+     border-radius: 0 15px 15px 0;
+     width: 100%;
+     height: 90%;
+     margin: 10px 40px 10px 15px;
+     font-size: 120%;
+    }
+    .stars_pop{
+        font-size: 15px;
+    }
+    
     .hebergement-populaire_card{
-        width: 330px;
-        height: 135px;  
+        width: 80vw;
+        height: 225px; 
+        max-width:550px;
     } 
     .pop_titre{
         padding: 0px 0px 20px 0px;
@@ -536,7 +559,10 @@ footer{
 
 }
 /* règles CSS pour les mobiles ici */
-@media screen and (max-width: 480px) {
+
+
+@media screen and (max-width: 550px) {
+
    
     /* Body Properties for mobile*/
     body, .bloc-page{
@@ -561,7 +587,6 @@ footer{
     /* logo and nav bar for mobile*/
     .entete{
         flex-wrap: wrap; 
-        
     }
    .logo-reservia:nth-child(1){
     order: 1;
@@ -573,7 +598,9 @@ footer{
         order: 2;
    }
    .logo-reservia{
-    padding:8%;
+
+    padding:11%;
+
    }
     .nav_hebergement, .nav_activites{
         border-top: 0;
@@ -593,12 +620,20 @@ footer{
         width: 100%;   
     }
     .signup{
-        padding:15px;
+        padding:10%;
     }
     /* icone, search bar, send button for mobile*/
     .searchBar p{
-        width: 330px;
+        width: 100%;
+        max-width: 330px;
         height: 50px;
+        }
+    .fa-map-marker-alt{
+        flex-shrink: 0;
+    }
+     .search{
+            flex-basis:230px;
+            flex-shrink: 1;
         }
     .loupe{
         display: unset;
@@ -611,6 +646,7 @@ footer{
         cursor: pointer;
         display: block;
         color: white;
+        flex-shrink:0;
     }
     .rechercher {
           display: none;
@@ -655,11 +691,18 @@ footer{
         border-radius:0;
         width: 100%;
     }
-   
+    
+   .description_hebergementPopulaire{
+       font-size: 100%;
+   }
     .hebergement-populaire_card{
-        width: 330px;
-        height: 135px;  
-        
+        width:95vw;
+        max-width: 337px;
+        height: 135px;   
+       
+    }
+    .stars_pop{
+        font-size: 12px;
     }
     /* sub block hebergement for mobile */
     .ListeHebergement_Marseille{
