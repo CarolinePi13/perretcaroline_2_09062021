@@ -472,6 +472,7 @@ footer{
     header{
         padding: 0 20px 0 20px; 
     }
+  
     .filtres_liste
     {
         row-gap: 10px;
@@ -511,11 +512,7 @@ footer{
     .stars_pop{
         font-size: 15px;
     }
-    .contenu_lesPlusPopulaire{
-        display: flex;
-        flex-direction: column;
-        align-items:center
-    }
+    
     .hebergement-populaire_card{
         width: 80vw;
         height: 225px; 
@@ -622,8 +619,16 @@ footer{
     }
     /* icone, search bar, send button for mobile*/
     .searchBar p{
-        width: 330px;
+        width: 100%;
+        max-width: 330px;
         height: 50px;
+        }
+    .fa-map-marker-alt{
+        flex-shrink: 0;
+    }
+     .search{
+            flex-basis:230px;
+            flex-shrink: 1;
         }
     .loupe{
         display: unset;
@@ -636,6 +641,7 @@ footer{
         cursor: pointer;
         display: block;
         color: white;
+        flex-shrink:0;
     }
     .rechercher {
           display: none;
@@ -680,12 +686,15 @@ footer{
         border-radius:0;
         width: 100%;
     }
+    
    .description_hebergementPopulaire{
        font-size: 100%;
    }
     .hebergement-populaire_card{
-        width: 330px;
+        width:95vw;
+        max-width: 337px;
         height: 135px;   
+       
     }
     .stars_pop{
         font-size: 12px;
