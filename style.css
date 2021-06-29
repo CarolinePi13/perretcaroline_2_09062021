@@ -104,7 +104,6 @@ nav ul li{
     border-radius: 15px;
     margin-bottom: 10px;
 }
-
 .fa-map-marker-alt{
     height: 35px;
     width: 50px;
@@ -120,7 +119,6 @@ nav ul li{
     font-size: 1em;
     color: black;
 }
-
 .rechercher{
     background-color: #0065FC;
     border:none;
@@ -160,6 +158,10 @@ nav ul li{
 .single_filter i{
     position: relative;
     margin-right:-40px;
+    padding:17px;
+    background-color: #DEEBFF;
+    border-radius:25px;
+    color: #0065FC;
 }
 
 .filtres {
@@ -174,12 +176,6 @@ nav ul li{
     flex-wrap: wrap;
 }
 
-.filtres i{
-    padding:17px;
-    background-color: #DEEBFF;
-    border-radius:25px;
-    color: #0065FC;
-}
 /* ligne d'info */
 .infoLine{
     display: flex;
@@ -235,18 +231,21 @@ nav ul li{
 .hebergement__card{
     display: flex;
     text-align: left;
-    width:235px;
-    height: 200px;
+    width: 30%;
+    min-width:235px;
+    min-height: 200px;
     margin-bottom: 25px;
     background-color: white;
     border-radius: 15px;
-    padding: 3px;
+    padding: 0.3%;
     box-shadow: 2px 2px 20px #818181af ;
 }
 
 .image_hebergement{
-    height: 115px;
-    width: 235px;
+    width:100%;
+    height: 60%;
+    min-height: 115px;
+    min-width: 235px;
     border-radius: 15px 15px 0 0;
     object-fit: cover;  
 }
@@ -288,23 +287,23 @@ nav ul li{
     display: flex;
     flex-direction: column;
     align-items:center;
+    width: 100%;
 }
 
 .hebergement-populaire_card{
     display: flex;
     align-items: center;
-    border: 3px solid white;
+    padding:0.9%;
     margin-bottom:30px;
     border-radius: 15px;
-    width: 345px;
-    height: 135px;
+    width: 100%;
     box-shadow: 2px 2px 20px #818181af ;
     background-color: white;
 }
 
 .image_plus_populaire{
     border-radius: 15px 0 0 15px;
-    height: 135px ;
+    width:35%;
     object-fit: cover;
 }
 
@@ -313,14 +312,13 @@ nav ul li{
  flex-direction: column;
  background-color: white;
  border-radius: 0 15px 15px 0;
- width: 100%;
- height: 90%;
+ width: 60%;
  margin: 10px 40px 10px 15px;
 }
 
 .description_hebergementPopulaire p{
    font-size: 0.8em;
-   flex: 90%;
+   padding-bottom: 15%;
 }
 
 /* Block Section Activites*/
@@ -331,9 +329,10 @@ nav ul li{
 }
 
 .conteneur_activites{
+    width: 99vw;
     display: flex;
     flex-direction: column;
-    column-gap: 1%;
+    column-gap: 3%;
     flex-wrap: wrap;
     height: 445px;
 }
@@ -374,7 +373,7 @@ nav ul li{
 }
 
 .conteneur_activites article{
-    object-fit: cover;
+    
     width: 300px;
     display: flex;
     flex-direction: column;
