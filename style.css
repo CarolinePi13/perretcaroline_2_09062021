@@ -12,16 +12,16 @@ ul{
     list-style: none;
 }
 h1{
-    font-size: 1.2em;
+    font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 2px;
 }
 h2{
     margin-top: 0;
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 h3{ 
-    font-size: 1em;
+    font-size: 1rem;
     margin: 3px 0 0 0;
 }
 p{
@@ -70,7 +70,7 @@ nav ul{
 
 nav ul li{
     text-align: center;
-    font-size: 0.9em;
+    font-size: 0.9rem;
     width:165px;
 }
 .nav_hebergement{
@@ -116,7 +116,7 @@ nav ul li{
     height: 50px;
     width: 230px;
     border: none;
-    font-size: 1em;
+    font-size: 1rem;
     color: black;
 }
 .rechercher{
@@ -125,7 +125,7 @@ nav ul li{
     height: 50px;
     flex: 1;
     border-radius: 0 15px 15px 0;
-    font-size: 1em;
+    font-size: 1rem;
     color: white;
 }
 /* alternative button for mobile */
@@ -206,7 +206,7 @@ nav ul li{
 }
 
 .around_hebergement_plusPop p{
-    font-size: 0.8em;
+    font-size: 0.8rem;
 }
 
 .stars_pop, .heber_star{
@@ -218,7 +218,7 @@ nav ul li{
 .Parent_sectionHebergement{
     background-color:  #F2F2F2;
     border-radius: 15px;
-    padding: 2.5%;
+    padding: 2.5% 2.5% 0 2.5%;
     width: 65%;  
 }
 
@@ -267,9 +267,9 @@ nav ul li{
     /* sub block Les plus poplaires*/
 
 .lesPlusPopulaires{
-  padding: 2.5%;
+  padding: 2.5% 2.5% 0 2.5%;
   margin-left: 2%;
-  width: 28%;
+  width: 30%;
   border-radius: 15px;
   background-color:#F2F2F2;
   display: flex;
@@ -286,25 +286,32 @@ nav ul li{
 .contenu_lesPlusPopulaire{
     display: flex;
     flex-direction: column;
+    
     align-items:center;
-    width: 100%;
+    width:100%;
 }
 
 .hebergement-populaire_card{
     display: flex;
     align-items: center;
     padding:0.9%;
-    margin-bottom:30px;
+    margin-bottom:10%;
     border-radius: 15px;
     width: 100%;
+    max-width: 450px;
+    max-height: 170px;
+    min-height: 130px;
     box-shadow: 2px 2px 20px #818181af ;
     background-color: white;
+    
 }
 
 .image_plus_populaire{
     border-radius: 15px 0 0 15px;
-    width:35%;
+    width: 35%;
+    height:100%;
     object-fit: cover;
+    
 }
 
 .description_hebergementPopulaire{
@@ -312,15 +319,22 @@ nav ul li{
  flex-direction: column;
  background-color: white;
  border-radius: 0 15px 15px 0;
- width: 60%;
- margin: 10px 40px 10px 15px;
+ margin: 1% 4% 1% 3%;
+ 
+ justify-content: flex-start;
 }
-
+.description_hebergementPopulaire h3{
+    flex: 0;
+}
 .description_hebergementPopulaire p{
-   font-size: 0.8em;
+   font-size: 0.8rem;
    padding-bottom: 15%;
+   flex: 0;
 }
-
+.stars_pop{
+    flex-grow: 1;
+    text-align: bottom;
+    ;}
 /* Block Section Activites*/
 
 .activites{
@@ -368,7 +382,7 @@ nav ul li{
 
 .caption {
     flex:none;
-    font-size: 1em;
+    font-size: 1rem;
     height: 55px; 
 }
 
@@ -506,10 +520,10 @@ footer{
      width: 100%;
      height: 90%;
      margin: 10px 40px 10px 15px;
-     font-size: 120%;
+     font-size: 1.3rem;
     }
     .stars_pop{
-        font-size: 15px;
+        font-size: 1rem;
     }
     
     .hebergement-populaire_card{
@@ -570,7 +584,7 @@ footer{
     }
   
     h1{
-        font-size:1.4em
+        font-size:1.4rem
     }
     h2{
         margin:20px;
@@ -692,7 +706,7 @@ footer{
     }
     
    .description_hebergementPopulaire{
-       font-size: 100%;
+       font-size: 1rem;
    }
     .hebergement-populaire_card{
         width:95vw;
@@ -701,7 +715,7 @@ footer{
        
     }
     .stars_pop{
-        font-size: 12px;
+        font-size: 0.7rem;
     }
     /* sub block hebergement for mobile */
     .ListeHebergement_Marseille{
