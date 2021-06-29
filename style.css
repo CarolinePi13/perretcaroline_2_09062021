@@ -45,7 +45,7 @@ a{
 
 /* logo and nav bar*/
 .logo-reservia{
-    height: 40px;
+    height: 50px;
     justify-self: flex-start;    
 }
 .entete{
@@ -71,12 +71,23 @@ nav ul{
 nav ul li{
     text-align: center;
     font-size: 0.9rem;
-    width:165px;
-}
+    width:165px;}
+
 .nav_hebergement{
     border-top: 2px solid #0065FC;
     box-shadow: inset 0px 3px 7px -6px #0065FC;
     padding:20px 0 0 0;
+}
+.nav_activites:hover{
+    border-top: 2px solid #0065FC;
+    box-shadow: inset 0px 3px 7px -6px #0065FC;
+}
+.nav_activites{
+    border-top: 2px transparent;
+    padding:20px 0 0 0;
+}
+.signup:hover{
+    transform: scale(1.2);
 }
 .logo-reservia:nth-child(1){
     flex:0;
@@ -87,10 +98,7 @@ nav ul li{
 .signup:nth-child(3){
     flex:0;
 }
-.nav_activites{
-    border-top: 2px transparent;
-    padding:20px 0 0 0;
-}
+
 /* "Trouver votre hebergement" Titre h1 */
 .PageTitle{
     margin: 10px 0 20px 0;
@@ -127,6 +135,7 @@ nav ul li{
     border-radius: 0 15px 15px 0;
     font-size: 1rem;
     color: white;
+    cursor: pointer;
 }
 /* alternative button for mobile */
     .loupe{
@@ -153,6 +162,7 @@ nav ul li{
 .single_filter:hover{
     box-shadow: 2px 2px 2px gray;
     border-radius:20px;
+    transform: scale(1.1);
 }
 
 .single_filter i{
@@ -237,7 +247,7 @@ nav ul li{
     margin-bottom: 25px;
     background-color: white;
     border-radius: 15px;
-    padding: 0.3%;
+    padding: 3px;
     box-shadow: 2px 2px 20px #818181af ;
 }
 
@@ -286,7 +296,6 @@ nav ul li{
 .contenu_lesPlusPopulaire{
     display: flex;
     flex-direction: column;
-    
     align-items:center;
     width:100%;
 }
@@ -298,43 +307,37 @@ nav ul li{
     margin-bottom:10%;
     border-radius: 15px;
     width: 100%;
+    height: 80%;
     max-width: 450px;
     max-height: 170px;
     min-height: 130px;
     box-shadow: 2px 2px 20px #818181af ;
-    background-color: white;
-    
+    background-color: white;  
 }
 
 .image_plus_populaire{
     border-radius: 15px 0 0 15px;
     width: 35%;
     height:100%;
-    object-fit: cover;
-    
+    object-fit: cover;  
 }
 
 .description_hebergementPopulaire{
- display: flex;
- flex-direction: column;
- background-color: white;
- border-radius: 0 15px 15px 0;
- margin: 1% 4% 1% 3%;
- 
- justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0 15px 15px 0;
+    width: 100%;
+    height: 90%;
+    margin: 10px 40px 10px 15px;
+    font-size: 1.3rem;
 }
-.description_hebergementPopulaire h3{
-    flex: 0;
-}
-.description_hebergementPopulaire p{
+
+.description-txt{
    font-size: 0.8rem;
-   padding-bottom: 15%;
-   flex: 0;
+   flex:1;
 }
-.stars_pop{
-    flex-grow: 1;
-    text-align: bottom;
-    ;}
+
 /* Block Section Activites*/
 
 .activites{
@@ -387,7 +390,6 @@ nav ul li{
 }
 
 .conteneur_activites article{
-    
     width: 300px;
     display: flex;
     flex-direction: column;
@@ -416,8 +418,31 @@ footer{
 }
 
 /* media queries*/
+@media (min-width: 1600px){
+    body{
+        max-width: 1800px;
+        margin: auto;
+    }
+    
+    .bloc-page{
+        margin: 0 10% 10% 10%; 
+    }
+    .Parent_sectionHebergement{
+        max-width: 980px ;
+    }
+    .lesPlusPopulaires{
+        max-width: 485px;
+    }
+    .conteneur_activites{  
+        width: 80vw;
+        max-width: 1460px;
+        }
+    footer{
+        max-width: 1800px;
+    }
+}
 
-@media all and (max-width: 1280px)
+@media (max-width: 1280px)
 {
     /* properties page content for smaller screens */
     .around_hebergement_plusPop{
@@ -453,9 +478,7 @@ footer{
         width: 290px;
         height: 135px;   
     }
-    .description_hebergementPopulaire{
-        margin: 10px 10px 10px 15px;
-    }
+ 
     /* Block Section Activites for smaller screeens*/
     .conteneur_activites article{
         height: 210px;
@@ -469,7 +492,7 @@ footer{
     
 }
 /* règles CSS pour les tablettes ici */
-@media screen and (max-width: 1000px) 
+@media (max-width: 1000px) 
 {
     /* Body Properties for tablets*/
     body{
@@ -512,16 +535,7 @@ footer{
         object-fit: cover;
     }
     
-    .description_hebergementPopulaire{
-     display: flex;
-     flex-direction: column;
-     background-color: white;
-     border-radius: 0 15px 15px 0;
-     width: 100%;
-     height: 90%;
-     margin: 10px 40px 10px 15px;
-     font-size: 1.3rem;
-    }
+    
     .stars_pop{
         font-size: 1rem;
     }
@@ -547,11 +561,9 @@ footer{
         justify-content: space-around;
         flex-wrap: wrap;
     }
-    .description_hebergementPopulaire{
-        margin: 10px 10px 10px 15px;
-    }
+    
     .afficher_plus{
-        padding-left: 20px;
+        padding: 20px;
     }
     /* Block Section Activites for tablets*/
     .conteneur_activites article{
@@ -574,7 +586,7 @@ footer{
 /* règles CSS pour les mobiles ici */
 
 
-@media screen and (max-width: 550px) {
+@media (max-width: 550px) {
 
    
     /* Body Properties for mobile*/
@@ -615,19 +627,27 @@ footer{
     padding:11%;
 
    }
-    .nav_hebergement, .nav_activites{
+    .nav_activites{
+        
+        padding: 0 0 20px 0;
+        font-size: 1em;
+        width: 50%;
+        border-bottom: 2px solid #F2F2F2;
+    }
+    .nav_hebergement{
+        border-bottom: 2px solid #0065FC;
         border-top: 0;
         box-shadow: none;
         padding: 0 0 20px 0;
         font-size: 1em;
         width: 50%;
     }
-    .nav_hebergement{
+    .nav_activites:hover{
         border-bottom: 2px solid #0065FC;
+        border-top: 0;
+        box-shadow: none;
     }
-    .nav_activites{
-        border-bottom: 2px solid #F2F2F2;
-    }
+   
     nav ul{
         padding: 0; 
         width: 100%;   
@@ -660,6 +680,7 @@ footer{
         display: block;
         color: white;
         flex-shrink:0;
+        cursor: pointer;
     }
     .rechercher {
           display: none;
