@@ -21,11 +21,11 @@ h2{
     font-size: 1.2rem;
 }
 h3{ 
-    font-size: 1rem;
+    font-size: 0.95rem;
     margin: 3px 0 0 0;
 }
 p{
-    margin: 8px 0 0 0;
+    margin:3px 0 0 0;
 }
 a{
     text-decoration: none;
@@ -35,7 +35,7 @@ a{
     font-weight: bold;
 }
 .grey{
-   color: #F2F2F2;
+   color: #e2dcdc;
 }
 .blue{
     color: #0065FC;
@@ -241,9 +241,9 @@ nav ul li{
 .hebergement__card{
     display: flex;
     text-align: left;
-    width: 30%;
-    min-width:235px;
-    min-height: 200px;
+    width: 31%;
+    box-sizing: border-box;
+    height: auto;
     margin-bottom: 25px;
     background-color: white;
     border-radius: 15px;
@@ -254,8 +254,6 @@ nav ul li{
 .image_hebergement{
     width:100%;
     height: 60%;
-    min-height: 115px;
-    min-width: 235px;
     border-radius: 15px 15px 0 0;
     object-fit: cover;  
 }
@@ -264,14 +262,16 @@ nav ul li{
     background-color: white;
     display: flex;
     flex-direction: column;
-    width: 95%;
-    height: 55px;
+    justify-content: space-between;
+    box-sizing: inherit;
+    height: 40%;
+    width: 99%;
     border-radius: 0 0 15px 15px;
    padding-left: 5px;
    
 }
-.hebergement__description p{
-    padding-bottom: 10px;
+.heber_star{
+    padding: 2%;
 }
 
     /* sub block Les plus poplaires*/
@@ -303,9 +303,11 @@ nav ul li{
 .hebergement-populaire_card{
     display: flex;
     align-items: center;
+    justify-self: flex-start;
     padding:0.9%;
     margin-bottom:10%;
     border-radius: 15px;
+    box-sizing: border-box;
     width: 100%;
     height: 80%;
     max-width: 450px;
@@ -350,7 +352,7 @@ nav ul li{
     width: 99vw;
     display: flex;
     flex-direction: column;
-    column-gap: 3%;
+    column-gap: 1%;
     flex-wrap: wrap;
     height: 445px;
 }
@@ -391,7 +393,7 @@ nav ul li{
 }
 
 .conteneur_activites article{
-    width: 300px;
+    width: 22vw;
     display: flex;
     flex-direction: column;
     border-radius:15px;
@@ -443,55 +445,7 @@ footer{
     }
 }
 
-@media (max-width: 1280px)
-{
-    /* properties page content for smaller screens */
-    .around_hebergement_plusPop{
-        flex-direction: column-reverse;
-    }
-    /* sub block hebergement for smaller screens */
-    .Parent_sectionHebergement{
-        width: 95%;
-    }
-    .ListeHebergement_Marseille{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        padding: 4%;
-        column-gap: 4%;
-    }
-    /* sub block Les plus poplaires for smaller screens*/
-    .lesPlusPopulaires{
-      margin: 0 0 40px 0;
-      flex-direction: column;
-      width:95%;
-      padding: 3%;
-    }
-    .contenu_lesPlusPopulaire{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        row-gap: 20px;
-        column-gap: 1%;
-        justify-content: space-around;
-    }
-    .hebergement-populaire_card{  
-        width: 290px;
-        height: 135px;   
-    }
- 
-    /* Block Section Activites for smaller screeens*/
-    .conteneur_activites article{
-        height: 210px;
-    }
-    .conteneur_activites{
-       flex-direction: row;
-       justify-content: space-between;
-       width: 100%;
-    }
-    
-    
-}
+
 /* règles CSS pour les tablettes ici */
 @media (max-width: 1000px) 
 {
