@@ -302,7 +302,6 @@ nav ul li{
 
 .hebergement-populaire_card{
     display: flex;
-    align-items: center;
     justify-self: flex-start;
     padding:0.9%;
     margin-bottom:10%;
@@ -447,7 +446,7 @@ footer{
 
 
 /* règles CSS pour les tablettes ici */
-@media (max-width: 1000px) 
+@media (min-width: 521px) and (max-width: 1000px) 
 {
     /* Body Properties for tablets*/
     body{
@@ -459,6 +458,8 @@ footer{
     h2{
         margin:20px;
     }
+    h3{
+        font-size: 1.3rem;}
     /* Block Header and navigation for tablets*/
     header{
         padding: 0 20px 0 20px; 
@@ -472,39 +473,51 @@ footer{
     .around_hebergement_plusPop{
         flex-direction: column-reverse;
         align-items: center;
+        
     }
     
    
    /* sub block Les plus poplaires for tablets*/
     .lesPlusPopulaires{
       margin-left: 0;
+      width: 100vw;
       padding: 0 5% 5% 5%;
       justify-content: center;
-      width: fit-content;
       margin-bottom: 40px;
     }
     .image_plus_populaire{
         border-radius: 15px 0 0 15px;
-        height: 100% ;
+        height: auto;
         width:40%;
         object-fit: cover;
     }
-    
-    
+    .contenu_lesPlusPopulaire{
+        width:100vw;
+    }
     .stars_pop{
         font-size: 1rem;
     }
-    
+    .description_hebergementPopulaire{ 
+        width: 100%;
+        height: unset;
+    }
+    .description_hebergementPopulaire p{
+        font-size: 1rem;
+    }
     .hebergement-populaire_card{
-        width: 80vw;
-        height: 225px; 
-        max-width:550px;
+        width: 90vw;
+        height: 100%;   
+        max-width: 700px;
+        max-height: 300px;
+        min-height: 200px;
+        
     } 
     .pop_titre{
         padding: 0px 0px 20px 0px;
         width: 90%;
         align-items: center ;
     }
+
     /* sub block hebergement for tablets*/
     .Parent_sectionHebergement{  
         padding:5px 0 30px 0;
@@ -515,6 +528,11 @@ footer{
     .ListeHebergement_Marseille{
         justify-content: space-around;
         flex-wrap: wrap;
+        column-gap: 1%;
+    }
+    .hebergement__card{
+        width:40%;
+        min-width: 250px;
     }
     
     .afficher_plus{
@@ -522,7 +540,11 @@ footer{
     }
     /* Block Section Activites for tablets*/
     .conteneur_activites article{
+        width: 45vw;
+        max-width: 360px;
+        min-width: 230px;
         height: 210px;
+        max-height:300px ;
     }
     .conteneur_activites{
        flex-direction: row;
@@ -530,7 +552,7 @@ footer{
        width: 100%;
        height: 100%;  
        row-gap: 30px;
-       column-gap: 30px; 
+       column-gap: 5%; 
     }   
     .port, .notre-dame{ 
         margin-bottom:0;
@@ -541,7 +563,7 @@ footer{
 /* règles CSS pour les mobiles ici */
 
 
-@media (max-width: 550px) {
+@media (max-width: 520px) {
 
    
     /* Body Properties for mobile*/
@@ -557,7 +579,7 @@ footer{
         margin:20px;
         }
     /* Block Header and navigation for mobile*/
-    
+  
     header{
         padding: 0;
     }
@@ -680,15 +702,16 @@ footer{
         border-radius:0;
         width: 100%;
     }
-    
+    .image_plus_populaire{
+        object-fit: cover;
+    }
    .description_hebergementPopulaire{
        font-size: 1rem;
    }
     .hebergement-populaire_card{
-        width:95vw;
-        max-width: 337px;
-        height: 135px;   
-       
+        width:100%;
+        max-width: 330px;
+        height: 150px;       
     }
     .stars_pop{
         font-size: 0.7rem;
@@ -707,17 +730,31 @@ footer{
     .afficher_plus{
         padding-left: 20px;
     }
+    .hebergement__card{
+        width: 90%;
+        height: auto;
+        max-height: 210px;
+        max-width: 330px;
+    }
+    
+    .hebergement__description{
+        height:25%;
+    }
     /* Block Section Activites for mobile*/
     .conteneur_activites article{
+        width: 100vw;
+        max-width: 330px;
+        min-width: 230px;
         height: 210px;
+        max-height:300px ;
     }
     .conteneur_activites{
        flex-direction: row;
        justify-content: center;
        width: 100%;
-       height: 100%;
+       height: 100%;  
        row-gap: 30px;
-       column-gap: 30px;
+       column-gap: 5%; 
     }  
     .port, .notre-dame{ 
         margin-bottom:0;
