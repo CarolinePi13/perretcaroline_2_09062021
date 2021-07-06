@@ -401,7 +401,7 @@ nav ul li{
 }
 
 .caption h4{
-    padding-left: 15px;
+    padding-left: 10px;
     
 }
 
@@ -446,11 +446,12 @@ footer{
 
 
 /* règles CSS pour les tablettes ici */
-@media (min-width: 521px) and (max-width: 1000px) 
+@media (min-width: 531px) and (max-width: 1024px) 
 {
     /* Body Properties for tablets*/
     body{
         padding:0;
+        
     } 
     .bloc-page{
         margin:0;  
@@ -461,9 +462,61 @@ footer{
     h3{
         font-size: 1.3rem;}
     /* Block Header and navigation for tablets*/
-    header{
-        padding: 0 20px 0 20px; 
-    }
+        /* Block Header and navigation for mobile*/
+  
+        header{
+            padding: 0;
+        }
+         .PageTitle, .searchBar, .filtres, .infoLine{
+            padding: 0 4% 0 4%; 
+        }
+        /* logo and nav bar for mobile*/
+        .entete{
+            flex-wrap: wrap; 
+        }
+       .logo-reservia:nth-child(1){
+        order: 1;
+       }
+       .navigation:nth-child(2){
+            order: 3;
+       }
+       .signup:nth-child(3){
+            order: 2;
+       }
+       .logo-reservia{
+    
+        padding:6% 25% 6% 7% ;
+    
+       }
+        .nav_activites{
+            
+            padding: 0 0 20px 0;
+            font-size: 1em;
+            width: 50%;
+            border-bottom: 2px solid #F2F2F2;
+        }
+        .nav_hebergement{
+            border-bottom: 2px solid #0065FC;
+            border-top: 0;
+            box-shadow: none;
+            padding: 0 0 20px 0;
+            font-size: 1em;
+            width: 50%;
+        }
+        .nav_activites:hover{
+            border-bottom: 2px solid #0065FC;
+            border-top: 0;
+            box-shadow: none;
+        }
+       
+        nav ul{
+            padding: 0; 
+            width: 100%;   
+        }
+        .signup{
+            width: 50%;
+            padding:6% 7% 6% 28%;
+        }
   
     .filtres_liste
     {
@@ -480,8 +533,8 @@ footer{
    /* sub block Les plus poplaires for tablets*/
     .lesPlusPopulaires{
       margin-left: 0;
-      width: 100vw;
-      padding: 0 5% 5% 5%;
+      width: 100%;
+      padding: 0 0 5% 0;
       justify-content: center;
       margin-bottom: 40px;
     }
@@ -492,7 +545,7 @@ footer{
         object-fit: cover;
     }
     .contenu_lesPlusPopulaire{
-        width:100vw;
+        width:99%;
     }
     .stars_pop{
         font-size: 1rem;
@@ -522,16 +575,17 @@ footer{
     .Parent_sectionHebergement{  
         padding:5px 0 30px 0;
         margin-top: 0;
-        width: 100vw;
+        width: fit-content;
         border-radius: 0px;
     }
     .ListeHebergement_Marseille{
         justify-content: space-around;
         flex-wrap: wrap;
         column-gap: 1%;
+        width: fit-content;
     }
     .hebergement__card{
-        width:40%;
+        width:39%;
         min-width: 250px;
     }
     
@@ -541,7 +595,7 @@ footer{
     /* Block Section Activites for tablets*/
     .conteneur_activites article{
         width: 45vw;
-        max-width: 360px;
+        max-width: 400px;
         min-width: 230px;
         height: 210px;
         max-height:300px ;
@@ -549,7 +603,7 @@ footer{
     .conteneur_activites{
        flex-direction: row;
        justify-content: center;
-       width: 100%;
+       width: fit-content;
        height: 100%;  
        row-gap: 30px;
        column-gap: 5%; 
@@ -563,7 +617,7 @@ footer{
 /* règles CSS pour les mobiles ici */
 
 
-@media (max-width: 520px) {
+@media (max-width: 530px) {
 
    
     /* Body Properties for mobile*/
@@ -702,6 +756,10 @@ footer{
         border-radius:0;
         width: 100%;
     }
+    .contenu_lesPlusPopulaire{
+        width: fit-content;
+        padding: 0 2% 0 2%;
+    }
     .image_plus_populaire{
         object-fit: cover;
     }
@@ -710,8 +768,8 @@ footer{
    }
     .hebergement-populaire_card{
         width:100%;
-        max-width: 330px;
-        height: 150px;       
+        max-width: 530px;
+        height: 150px;      
     }
     .stars_pop{
         font-size: 0.7rem;
@@ -731,19 +789,19 @@ footer{
         padding-left: 20px;
     }
     .hebergement__card{
-        width: 90%;
+       width:95%; 
         height: auto;
         max-height: 210px;
-        max-width: 330px;
+        max-width: 480px;
     }
-    
+   
     .hebergement__description{
         height:25%;
     }
     /* Block Section Activites for mobile*/
     .conteneur_activites article{
-        width: 100vw;
-        max-width: 330px;
+        width: 95vw;
+        max-width: 500px;
         min-width: 230px;
         height: 210px;
         max-height:300px ;
@@ -751,10 +809,11 @@ footer{
     .conteneur_activites{
        flex-direction: row;
        justify-content: center;
-       width: 100%;
+       width: fit-content;
        height: 100%;  
        row-gap: 30px;
        column-gap: 5%; 
+       padding: 0 2% 0 2% ;
     }  
     .port, .notre-dame{ 
         margin-bottom:0;
